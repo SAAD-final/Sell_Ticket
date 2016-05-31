@@ -54,7 +54,6 @@ $(document).ready(function() {
     });
     //已售出的座位
     sc.get(['1_2', '4_4','4_5','6_6','6_7','8_5','8_6','8_7','8_8', '10_1', '10_2']).status('unavailable');
-        
 });
 //计算总金额
 function recalculateTotal(sc) {
@@ -65,3 +64,9 @@ function recalculateTotal(sc) {
             
     return total;
 }
+
+$(document).ready(function () {
+    $('.seatCharts-seat').qtip({
+      content: '<img src="./images/13.jpg" alt="Seat" />'
+   });
+});
