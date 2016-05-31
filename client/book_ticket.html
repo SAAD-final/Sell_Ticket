@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/book_ticket.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/book_ticket.js"></script>
+<script type="text/javascript" src="js/jquery.seat-charts.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="headertop_desc">
+            <div class="wrap">
+                <div class="nav_list">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                    </ul>
+                </div>
+                <div class="account_desc">
+                    <ul>
+                        <li><a href="login_and_register.html">注册</a></li>
+                        <li><a href="login_and_register.html">登录</a></li>
+                        <!-- <li><a href="#">我的订单</a></li> -->
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="header_top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                </div>        
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrap">
+        <div class="content">
+            <div class="content_top">
+                <div class="heading">
+                    <h3>在线选座</h3>
+                </div>
+            </div>
+            <div class="section group">
+                <div class="cont-desc span_1_of_2">
+                    <div id="seat-map">
+                        <div class="front">屏幕</div>
+                    </div>
+                </div>
+                <div class="rightsidebar span_3_of_1 sidebar">
+                    <div class="booking-details">
+                        <p>影片：<span>星际穿越3D</span></p>
+                        <p>时间：<span>11月14日 21:00</span></p>
+                        <p>座位：</p>
+                        <ul id="selected-seats"></ul>
+                        <p>票数：<span id="counter">0</span></p>
+                        <p>总计：<b>￥<span id="total">0</span></b></p>
+                        <button class="checkout-button" href="order.html">确定购买</button>
+                        <div id="legend"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <div class="wrap">     
+             <div class="copy_right">
+                <p>Copyright &copy; 2016</p>
+            </div>           
+        </div>
+    </div>
+</body>
+</html>
+
