@@ -3,6 +3,7 @@
 <title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
 <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
@@ -19,13 +20,12 @@
                         <li><a href="index.html">首页</a></li>
                     </ul>
                 </div>
-                <div class="account_desc">
+                <!-- <div class="account_desc">
                     <ul>
                         <li><a href="login_and_register.html">注册</a></li>
                         <li><a href="login_and_register.html">登录</a></li>
-                        <!-- <li><a href="#">我的订单</a></li> -->
                     </ul>
-                </div>
+                </div> -->
                 <div class="clear"></div>
             </div>
         </div>
@@ -38,7 +38,6 @@
             </div>
         </div>
     </div>
-   <!------------End Header ------------>
     <div class="main">
         <div class="wrap">
         <div class="content">
@@ -51,14 +50,14 @@
                 <div class="col span_2_of_3">
                   <div class="contact-form">
                     <h2>请输入您的基本信息</h2>
-                        <form method="post" action="contact-post.html">
+                        <form method="post" action="index.html">
                             <div>
                                 <span><label>用户名</label></span>
-                                <span><input name="userName" type="text" class="textbox" ></span>
+                                <span><input name="userName" type="text" class="form-control"></span>
                             </div>
                             <div>
                                 <span><label>密码</label></span>
-                                <span><input name="userEmail" type="text" class="textbox"></span>
+                                <span><input name="password" type="password" class="form-control"></span>
                             </div>
                             <div>
                                 <span><input type="submit" value="Submit"  class="mybutton"></span>
@@ -75,11 +74,6 @@
             </div>           
         </div>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function() {          
-            $().UItoTop({ easingType: 'easeOutQuart' });
-        });
-    </script>
 </body>
 </html>
 

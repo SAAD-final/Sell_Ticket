@@ -33,7 +33,7 @@ $(document).ready(function() {
  
                 $counter.text(sc.find('selected').length+1);
                 $total.text(recalculateTotal(sc)+price);
-                            
+
                 return 'selected';
             } else if (this.status() == 'selected') { //已选中
                 //更新数量
@@ -50,6 +50,7 @@ $(document).ready(function() {
             } else {
                 return this.style();
             }
+
         }
     });
     //已售出的座位
@@ -61,12 +62,40 @@ function recalculateTotal(sc) {
     sc.find('selected').each(function () {
         total += price;
     });
-            
     return total;
 }
 
 $(document).ready(function () {
     $('.seatCharts-seat').qtip({
       content: '<img src="./images/13.jpg" alt="Seat" />'
-   });
+    });
+    $("#checkout-button").click(function() {
+        $.ajax({
+            type: "POST",
+            url: "/book_ticket",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(GetJsonData()),
+            dataType: "json",
+            success: function (message) {
+                if (message > 0) {
+                    alert("购票成功！");
+                }
+            },
+            error: function (message) {
+                alert("购票失败，请重试！");
+            }
+        });
+    });
+    function GetJsonData() {
+        var json = {
+            "a": 1,
+            "b": 2
+            /*"classid": 2,
+            "name": $("#tb_name").val(),
+            "zlclass": "测试类型1,测试类型2,测试类型3",
+            "pname": $("#tb_contact_people").val(),
+            "tel": $("#tb_contact_phone").val()*/
+        };
+        return json;
+    }
 });

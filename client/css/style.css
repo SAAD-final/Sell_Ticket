@@ -811,7 +811,7 @@ body {
 .contact-form input[type="text"], .contact-form textarea {
 	padding: 8px;
 	display: block;
-	width:98%;
+	width:100%;
 	background:none;
 	border:1px solid #CACACA;
 	outline: none;
@@ -952,7 +952,7 @@ body {
 		padding:3%;
 	}
 	.contact-form input[type="text"], .contact-form textarea{
-		width:95%;
+		width:100%;
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -1041,6 +1041,6 @@ body {
 		padding:5px 0;
 	}
 	.contact-form input[type="text"], .contact-form textarea{
-		width:93%;
+		width:100%;
 	}
 }
