@@ -88,8 +88,9 @@ $(document).ready(function () {
     });
     function GetJsonData() {
         var json = {
-            "a": 1,
-            "b": 2
+            "movie_id": 1,
+            "time": 2,
+            "ticket_num": 3,
             /*"classid": 2,
             "name": $("#tb_name").val(),
             "zlclass": "测试类型1,测试类型2,测试类型3",
