@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
@@ -46,32 +47,34 @@
     </div>
     <div class="main">
         <div class="wrap">
-        <div class="content">
-            <div class="content_top">
-                <div class="heading">
-                    <h3>在线选座</h3>
-                </div>
-            </div>
-            <div class="section group">
-                <div class="cont-desc span_1_of_2">
-                    <div id="seat-map">
-                        <div class="front">屏幕</div>
+            <div class="content">
+                <div class="content_top">
+                    <div class="heading">
+                        <h3>在线选座</h3>
                     </div>
                 </div>
-                <div class="rightsidebar span_3_of_1 sidebar">
-                    <div class="booking-details">
-                        <p>影片：<span>美国队长3</span></p>
-                        <p>时间：<span>2016年5月31日 21:00</span></p>
-                        <p>座位：</p>
-                        <ul id="selected-seats"></ul>
-                        <p>票数：<span id="counter">0</span></p>
-                        <p>总计：<b>￥<span id="total">0</span></b></p>
-                        <button id="checkout-button" type="button" class="btn btn-success">确认购买</button>
-                        <div id="legend"></div>
+                <div class="section group">
+                    <div class="cont-desc span_1_of_2">
+                        <div id="seat-map">
+                            <div class="front">屏幕</div>
+                        </div>
+                    </div>
+                    <div class="rightsidebar span_3_of_1 sidebar">
+                        <div class="booking-details">
+                            <p>影片：<span>美国队长3</span></p>
+                            <p>时间：<span>2016年5月31日 21:00</span></p>
+                            <p>座位：</p>
+                            <ul id="selected-seats"></ul>
+                            <p>票数：<span id="counter">0</span></p>
+                            <p>总计：<b>￥<span id="total">0</span></b></p>
+                            <button id="checkout-button" type="button" class="btn btn-success">确认购买</button>
+                            <div id="legend"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <div class="footer">
         <div class="wrap">     
              <div class="copy_right">

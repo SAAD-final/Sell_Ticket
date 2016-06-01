@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
@@ -40,33 +41,35 @@
     </div>
     <div class="main">
         <div class="wrap">
-        <div class="content">
-            <div class="content_top">
-                <div class="heading">
-                    <h3>快来加入我们！</h3>
+            <div class="content">
+                <div class="content_top">
+                    <div class="heading">
+                        <h3>快来加入我们！</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="section group">
-                <div class="col span_2_of_3">
-                  <div class="contact-form">
-                    <h2>请输入您的基本信息</h2>
-                        <form method="post" action="index.html">
-                            <div>
-                                <span><label>用户名</label></span>
-                                <span><input name="userName" type="text" class="form-control"></span>
-                            </div>
-                            <div>
-                                <span><label>密码</label></span>
-                                <span><input name="password" type="password" class="form-control"></span>
-                            </div>
-                            <div>
-                                <button id="login_and_register_button" type="button" class="mybutton">提交</button>
-                            </div>
-                        </form>
-                  </div>
+                <div class="section group">
+                    <div class="col span_2_of_3">
+                      <div class="contact-form">
+                        <h2>请输入您的基本信息</h2>
+                            <form method="post" action="index.html">
+                                <div>
+                                    <span><label>用户名</label></span>
+                                    <span><input name="userName" type="text" class="form-control" /></span>
+                                </div>
+                                <div>
+                                    <span><label>密码</label></span>
+                                    <span><input name="password" type="password" class="form-control" /></span>
+                                </div>
+                                <div>
+                                    <button id="login_and_register_button" type="button" class="mybutton">提交</button>
+                                </div>
+                            </form>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     <div class="footer">
         <div class="wrap">
              <div class="copy_right">
